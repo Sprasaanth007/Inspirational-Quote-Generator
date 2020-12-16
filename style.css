@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+.card::before {
+  background: url('background.jpg');
+  background-position: 40%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 4vmin;
+  letter-spacing: 0.6vmin;
+  text-transform: uppercase;
+}
+
+.card {
+  position: relative;
+  width: 70vmin;
+  height: 50vmin;
+  background: rgba(255, 255, 255, 0.2);
+  border: 0.1vmin solid rgba(219, 219, 219, 0.1);
+  border-radius: 4vmin;
+  overflow: hidden;
+  box-shadow: 0 0.5vmin 1vmin rgba(0, 0, 0, 0.4);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: blur(4.5vmin);
+  margin: -5vmin;
+}
+
+.innercard {
+  position: relative;
+  width: 70vmin;
+  height: 50vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  position: absolute;
+  top: 10vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  position: absolute;
+  bottom: 9vmin;
+}
+
+button {
+  width: 30vmin;
+  height: 8vmin;
+  background: rgb(64, 93, 189);
+  border: none;
+  border-radius: 5vmin;
+  outline: transparent;
+  cursor: pointer;
+  font-size: 2.7vmin;
+  letter-spacing: 0.3vmin;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(206, 206, 206);
+}
+
+button:hover {
+  background: rgb(92, 128, 226);
+  box-shadow: 0 0 0.5vmin #fff;
+}
+
+.quote {
+  text-align: center;
+  font-size: 10rem;
+}
